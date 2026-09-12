@@ -64,10 +64,12 @@ CMAKE_BINARY_DIR = /Users/kaplanianarman/Desktop/АиСд/SORTING/build
 
 # The main recursive "all" target.
 all: CMakeFiles/BubbleSort.dir/all
+all: CMakeFiles/MergeSort.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/BubbleSort.dir/codegen
+codegen: CMakeFiles/MergeSort.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -76,6 +78,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/BubbleSort.dir/clean
+clean: CMakeFiles/MergeSort.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -109,6 +112,38 @@ CMakeFiles/BubbleSort.dir/codegen:
 CMakeFiles/BubbleSort.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/clean
 .PHONY : CMakeFiles/BubbleSort.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/MergeSort.dir
+
+# All Build rule for target.
+CMakeFiles/MergeSort.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MergeSort.dir/build.make CMakeFiles/MergeSort.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MergeSort.dir/build.make CMakeFiles/MergeSort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kaplanianarman/Desktop/АиСд/SORTING/build/CMakeFiles --progress-num=3,4 "Built target MergeSort"
+.PHONY : CMakeFiles/MergeSort.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/MergeSort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kaplanianarman/Desktop/АиСд/SORTING/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/MergeSort.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kaplanianarman/Desktop/АиСд/SORTING/build/CMakeFiles 0
+.PHONY : CMakeFiles/MergeSort.dir/rule
+
+# Convenience name for target.
+MergeSort: CMakeFiles/MergeSort.dir/rule
+.PHONY : MergeSort
+
+# codegen rule for target.
+CMakeFiles/MergeSort.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MergeSort.dir/build.make CMakeFiles/MergeSort.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/kaplanianarman/Desktop/АиСд/SORTING/build/CMakeFiles --progress-num=3,4 "Finished codegen for target MergeSort"
+.PHONY : CMakeFiles/MergeSort.dir/codegen
+
+# clean rule for target.
+CMakeFiles/MergeSort.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MergeSort.dir/build.make CMakeFiles/MergeSort.dir/clean
+.PHONY : CMakeFiles/MergeSort.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

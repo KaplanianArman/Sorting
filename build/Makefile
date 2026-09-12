@@ -129,6 +129,19 @@ BubbleSort/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/build
 .PHONY : BubbleSort/fast
 
+#=============================================================================
+# Target rules for targets named MergeSort
+
+# Build rule for target.
+MergeSort: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MergeSort
+.PHONY : MergeSort
+
+# fast build rule for target.
+MergeSort/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MergeSort.dir/build.make CMakeFiles/MergeSort.dir/build
+.PHONY : MergeSort/fast
+
 BubbleSort.o: BubbleSort.cpp.o
 .PHONY : BubbleSort.o
 
@@ -153,6 +166,30 @@ BubbleSort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BubbleSort.dir/build.make CMakeFiles/BubbleSort.dir/BubbleSort.cpp.s
 .PHONY : BubbleSort.cpp.s
 
+MergeSort.o: MergeSort.cpp.o
+.PHONY : MergeSort.o
+
+# target to build an object file
+MergeSort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MergeSort.dir/build.make CMakeFiles/MergeSort.dir/MergeSort.cpp.o
+.PHONY : MergeSort.cpp.o
+
+MergeSort.i: MergeSort.cpp.i
+.PHONY : MergeSort.i
+
+# target to preprocess a source file
+MergeSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MergeSort.dir/build.make CMakeFiles/MergeSort.dir/MergeSort.cpp.i
+.PHONY : MergeSort.cpp.i
+
+MergeSort.s: MergeSort.cpp.s
+.PHONY : MergeSort.s
+
+# target to generate assembly for a file
+MergeSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MergeSort.dir/build.make CMakeFiles/MergeSort.dir/MergeSort.cpp.s
+.PHONY : MergeSort.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... BubbleSort"
+	@echo "... MergeSort"
 	@echo "... BubbleSort.o"
 	@echo "... BubbleSort.i"
 	@echo "... BubbleSort.s"
+	@echo "... MergeSort.o"
+	@echo "... MergeSort.i"
+	@echo "... MergeSort.s"
 .PHONY : help
 
 
